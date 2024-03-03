@@ -46,7 +46,8 @@
 #elif defined (__ARMCC_VERSION) && (__ARMCC_VERSION >= 6100100)
   #include "cmsis_armclang.h"
 
-
+#elif defined ( __clang__ )
+  #include "cmsis_clang.h"
 /*
  * GNU Compiler
  */
